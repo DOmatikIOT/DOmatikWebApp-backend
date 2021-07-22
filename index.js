@@ -6,7 +6,7 @@ let port = process.env.PORT || 3001;
 
 let app = express();
 
-let Usuario = require("./routes/usuario");
+let Usuario = require("./routes/user");
 let Estado = require("./routes/estado");
 let Perfil = require("./routes/perfil");
 let EstadoSolicitud = require("./routes/estadoSolicitud");
@@ -21,7 +21,7 @@ app.listen(port, () => {
   console.log("Servidor Backend funcionando en el puerto :", port);
 });
 
-mongoose.connect("mongodb://localhost:27017/bleringappdb", {
+mongoose.connect("mongodb://localhost:27017/domatikappdb", {
   useUnifiedTopology: true,
   useNewUrlParser: true,
   useCreateIndex: true,
