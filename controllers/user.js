@@ -159,6 +159,11 @@ const userSignIn = (req, res) => {
 //   });
 // };
 
+const userTest = (req, res) => {
+  let params = req.body;
+  console.log('params: ', params);
+}
+
 module.exports = {
   userSignUp,
   userSignIn,
@@ -166,4 +171,5 @@ module.exports = {
   // cambiarEstadoUsuario,
   // listarUsuario,
   // listarUsuarioId,
+  userTest,
 };
