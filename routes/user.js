@@ -11,6 +11,6 @@ api.post("/user/sign-in", User.userSignIn);
 // api.get("/user/listarUsuarioId/:idUsuario", User.listarUsuarioId);
 // api.post("/user/listarUsuarioId/:idUsuario", User.listarUsuarioId);
 
-api.get("/test/envioPrueba", User.userTest);
+api.post("/test/envioPrueba", User.userTest);
 
 module.exports = api;

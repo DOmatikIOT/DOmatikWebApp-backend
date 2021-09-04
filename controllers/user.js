@@ -161,23 +161,9 @@ const userSignIn = (req, res) => {
 
 const userTest = (req, res) => {
   // let params = req.body;
+  // let nombres = req.params["nombres"];
   // console.log('params: ', params);
-
-  let temperaturaAmbiente = req.params["tempamb"];
-  let temperaturaInicial = req.params["tempini"];
-  let temperaturaProgramada = req.params["tempsetpoint"];
-  let fecha = req.params["fecha"];
-  let proceso = req.params["proceso"];
-
-  let params = {
-    "temperaturaAmbiente": temperaturaAmbiente,
-    "temperaturaInicial": temperaturaInicial,
-    "temperaturaProgramada": temperaturaProgramada,
-    "fecha": fecha,
-    "proceso": proceso,
-  };
-
-  res.status(200).send({ mensaje: "Datos recibidos", datosqueenviaste: params });
+  res.status(200).send({ mensaje: "Datos recibidos", datosqueenviaste: {} });
 }
 
 module.exports = {
