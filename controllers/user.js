@@ -161,7 +161,7 @@ const userSignIn = (req, res) => {
 
 const userTest = (req, res) => {
   // console.log('req: ', req);
-  let params = req.params;
+  let params = req.body;
   console.log('params: ', params);
 
   // let temperaturaAmbiente = req.params["tempamb"];
